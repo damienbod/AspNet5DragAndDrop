@@ -1,2 +1,5 @@
 AspNet5Gridster/bower_components
 AspNet5Gridster/AspNet5Gridster.xproj.user
+AspNet5Gridster/node_modules
+AspNet5Gridster/wwwroot/lib
+.vs/AspNet5Gridster/v14/.suo
