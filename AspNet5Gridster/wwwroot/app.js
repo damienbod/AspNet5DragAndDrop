@@ -1,0 +1,1 @@
+!function(){var a=angular.module("app",["ui.router"]);a.config(["$stateProvider","$urlRouterProvider",function(a,b){b.otherwise("/home"),a.state("home",{url:"/home",templateUrl:"/templates/home.html"})}])}();
