@@ -1,5 +1,5 @@
 ﻿(function () {
-    var mainApp = angular.module("myapp", ["ui.router"]);
+    var mainApp = angular.module("myapp", ["ui.router", "dndLists"]);
 
     mainApp.config(["$stateProvider", "$urlRouterProvider",
 		function ($stateProvider, $urlRouterProvider) {
