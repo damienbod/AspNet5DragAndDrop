@@ -7,7 +7,8 @@
         "ui-router": "0.2.14",
         "bootstrap": "3.3.4",
         "angular-animate": "1.3.15",
-        "jquery": "2.1.4"
+        "jquery": "2.1.4",
+        "angular-drag-and-drop-lists": "1.2.0"
     },
     "exportsOverride": {
         "bootstrap": {
@@ -21,9 +22,6 @@
         },
         "ui-router": {
             "": "release/angular-ui-router.{js,min.js,min.js.map}"
-        },
-        "javascript-detect-element-resize": {
-           "":  "*.js"
         },
         "jquery": {
             "": "dist/*.{js,min.js,min.map}"
