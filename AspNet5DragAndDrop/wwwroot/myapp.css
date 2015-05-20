@@ -1,1 +1,21 @@
-﻿
+﻿ul {
+    position: relative;
+}
+
+li {
+    background-color: #337ab7;
+    border: none;
+    border-radius: .25em;
+    color: #fff;
+    float: left;
+    font-weight: 700;
+    height: 50px;
+    margin: 5px;
+    padding: 3px;
+    text-align: center;
+    width: 100px;
+}
+
+.drapdropdiv {
+
+}

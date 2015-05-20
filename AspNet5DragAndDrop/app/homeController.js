@@ -3,9 +3,10 @@
 
     var module = angular.module('myapp');
    
-    function homeController($scope, $log) {
+    function homeController($scope, $log, workflows) {
         $log.info("homeController called");
         $scope.message = "home Controller";
+        $scope.workflows = workflows;
 
         $scope.lists = [
         {
@@ -31,7 +32,7 @@
         {
             label: "People",
             allowedTypes: ['man', 'woman'],
-            max: 6,
+            max: 20,
             people: [
                 { name: "Frank", type: "man" },
                 { name: "Mallory", type: "woman" },
@@ -49,7 +50,7 @@
 
     }
 
-    module.controller('homeController', ['$scope', '$log', homeController]);
+    module.controller('homeController', ['$scope', '$log', 'workflows', homeController]);
 
 })();
 

@@ -1,6 +1,27 @@
 ﻿<div class="typesDemo row">
 
-    <div ng-repeat="list in lists" class="col-md-4">
+    <div class="col-md-4">
+        <div class="panel panel-info">
+            <div class="panel-heading">
+                <h3 class="panel-title">List of {{list.label}} (max. {{list.max}})</h3>
+            </div>
+            <div class="panel-body">
+                <ul dnd-list="workflows">
+                    
+                    <li ng-repeat="workflow in workflows"
+                        dnd-draggable="workflow"
+                        dnd-type="workflow.type"                    
+                        dnd-effect-allowed="move"
+                        class="background-{{workflow.SectionType}}">
+                        {{workflow.Name}}
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!--<div ng-repeat="list in lists" class="col-md-4">
         <div class="panel panel-info">
             <div class="panel-heading">
                 <h3 class="panel-title">List of {{list.label}} (max. {{list.max}})</h3>
@@ -23,5 +44,6 @@
                 </ul>
             </div>
         </div>
-    </div>
+    </div>-->
+
 </div>

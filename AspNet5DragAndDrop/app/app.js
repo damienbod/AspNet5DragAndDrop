@@ -6,7 +6,19 @@
 		    $urlRouterProvider.otherwise("/home");
 
 		    $stateProvider
-                .state("home", { url: "/home", templateUrl: "/templates/home.html", controller: "homeController" })
+                .state("home", {
+                    url: "/home",
+                    templateUrl: "/templates/home.html",
+                    controller: "homeController",
+                    resolve: {
+
+                        WorkflowService: "WorkflowService",
+
+                        workflows: ["WorkflowService", function (WorkflowService) {
+                            return WorkflowService.getWorkflows();
+                        }]
+                    }
+                })
                  
 		}
     ]
