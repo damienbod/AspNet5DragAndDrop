@@ -6,8 +6,7 @@
     function homeController($scope, $log, workflows) {
         $log.info("homeController called");
         $scope.message = "home Controller";
-        $scope.workflows = workflows;      
-
+     
         $scope.models = {
             lists: { "flow": workflows },
             selected: workflows[0]
