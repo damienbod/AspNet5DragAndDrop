@@ -1,49 +1,27 @@
-﻿<div class="typesDemo row">
-
-    <div class="col-md-4">
-        <div class="panel panel-info">
-            <div class="panel-heading">
-                <h3 class="panel-title">List of {{list.label}} (max. {{list.max}})</h3>
-            </div>
-            <div class="panel-body">
-                <ul dnd-list="workflows">
-                    
-                    <li ng-repeat="workflow in workflows"
-                        dnd-draggable="workflow"
-                        dnd-type="workflow.type"                    
-                        dnd-effect-allowed="move"
-                        class="background-{{workflow.SectionType}}">
-                        {{workflow.Name}}
-                    </li>
-
-                </ul>
+﻿
+<div class="simpleDemo row">
+    <div class="col-md-8">
+        <div class="row">
+            <div ng-repeat="(listName, list) in models.lists" class="col-md-12">
+                <div class="panel panel-info">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">{{listName}}</h3>
+                    </div>
+                    <div class="panel-body">
+                        <ul dnd-list="list">
+                            <li ng-repeat="item in list"
+                                dnd-draggable="item"
+                                dnd-moved="list.splice($index, 1)"
+                                dnd-effect-allowed="move"
+                                dnd-selected="models.selected = item"
+                                ng-class="{'selected': models.selected === item}">
+                                {{item.Name}}
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-
-    <!--<div ng-repeat="list in lists" class="col-md-4">
-        <div class="panel panel-info">
-            <div class="panel-heading">
-                <h3 class="panel-title">List of {{list.label}} (max. {{list.max}})</h3>
-            </div>
-            <div class="panel-body">
-                <ul dnd-list="list.people"
-                    dnd-allowed-types="list.allowedTypes"
-                    dnd-disable-if="list.people.length >= list.max">
-
-                    <li ng-repeat="person in list.people"
-                        dnd-draggable="person"
-                        dnd-type="person.type"
-                        dnd-disable-if="person.type == 'unknown'"
-                        dnd-moved="list.people.splice($index, 1)"
-                        dnd-effect-allowed="move"
-                        class="background-{{person.type}}">
-                        {{person.name}}
-                    </li>
-
-                </ul>
-            </div>
-        </div>
-    </div>-->
-
 </div>
+

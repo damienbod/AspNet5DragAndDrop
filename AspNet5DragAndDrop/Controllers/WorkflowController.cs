@@ -36,7 +36,7 @@ namespace Controllers
                 },
                 new Section
                 {
-                    Id = 3,
+                    Id = 4,
                     Description = "CMD npm",
                     Name = "taskCmdNpm",
                     SectionType = "task",
@@ -44,7 +44,7 @@ namespace Controllers
                 },
                 new Section
                 {
-                    Id = 4,
+                    Id = 5,
                     Description = "workflow",
                     Name = "workflow",
                     SectionType = "container",
@@ -52,7 +52,7 @@ namespace Controllers
                 },
                 new Section
                 {
-                    Id = 5,
+                    Id = 6,
                     Description = "Visual Studio build 2015",
                     Name = "taskVSBuild2015",
                     SectionType = "task",
