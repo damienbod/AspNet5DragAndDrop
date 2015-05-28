@@ -13,50 +13,38 @@ namespace Controllers
                 new Section
                 {
                     Id = 1,
-                    Description = "root",
-                    Name = "root",
-                    SectionType = "container",
-                    AllowedTypes = new List<string>{ "container", "task"},
+                    Description = "This is a custom task.",
+                    Name = "Custom",
                 },
                 new Section
                 {
                     Id = 2,
-                    Description = "CMD grunt",
-                    Name = "taskCmdgrunt",
-                    SectionType = "task",
-                    AllowedTypes = new List<string>{},
+                    Description = "This task is used to execute a grunt cmd line.",
+                    Name = "Cmd Grunt Task",
                 },
                 new Section
                 {
                     Id = 3,
-                    Description = "CMD bower",
-                    Name = "taskCmdbower",
-                    SectionType = "task",
-                    AllowedTypes = new List<string>{},
+                    Description = "A bower task can be executed on the build server using this task.",
+                    Name = "Cmd Bower Task",
                 },
                 new Section
                 {
                     Id = 4,
-                    Description = "CMD npm",
-                    Name = "taskCmdNpm",
-                    SectionType = "task",
-                    AllowedTypes = new List<string>{},
+                    Description = "A npm task can be executed used this task.",
+                    Name = "Cmd Npm Task",
                 },
                 new Section
                 {
                     Id = 5,
-                    Description = "workflow",
-                    Name = "workflow",
-                    SectionType = "container",
-                    AllowedTypes = new List<string>{ "container", "task"},
+                    Description = "A custom workflow task can be excuted using this task",
+                    Name = "Workflow Spec",
                 },
                 new Section
                 {
                     Id = 6,
                     Description = "Visual Studio build 2015",
                     Name = "taskVSBuild2015",
-                    SectionType = "task",
-                    AllowedTypes = new List<string>{},
                 },
 
         };

@@ -12,8 +12,8 @@ namespace AspNet5DropAndDrop.Model
         public string Name { get; set; }
         public string Description { get; set; }
 
-        public string SectionType { get; set; }
+        //public string SectionType { get; set; }
 
-        public List<string> AllowedTypes { get; set; }
+        //public List<string> AllowedTypes { get; set; }
     }
 }

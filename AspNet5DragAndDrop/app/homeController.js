@@ -9,8 +9,8 @@
         $scope.workflows = workflows;      
 
         $scope.models = {
-            selected: null,
-            lists: { "flow": workflows }
+            lists: { "flow": workflows },
+            selected: workflows[0]
         };
 
 
