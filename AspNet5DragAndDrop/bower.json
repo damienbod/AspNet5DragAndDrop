@@ -12,7 +12,9 @@
     },
     "exportsOverride": {
         "bootstrap": {
-            "": "dist/**/*.*"
+            "js":  "dist/js/*.*",
+            "css":  "dist/css/*.*",
+            "fonts":  "dist/fonts/*.*"
         },
         "angular": {
             "": "angular{.js,.min.js,.min.js.map, .min.js.gzip}"
