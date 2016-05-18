@@ -6,3 +6,7 @@ AspNet5Gridster/wwwroot/lib
 AspNet5DragAndDrop/bower_components
 AspNet5DragAndDrop/node_modules
 .vs
+AspNet5DragAndDrop/bin
+AspNet5DragAndDrop/project.lock.json
+AspNet5DragAndDrop/obj
+AspNet5DragAndDrop/AspNet5DragAndDrop.xproj.user
